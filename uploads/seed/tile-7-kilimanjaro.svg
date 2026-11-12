@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+    <defs>
+      <linearGradient id="woodTable" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#eed8be" />
+        <stop offset="50%" stop-color="#d8ba96" />
+        <stop offset="100%" stop-color="#c19e78" />
+      </linearGradient>
+      <linearGradient id="beerBottle" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#4a2508" />
+        <stop offset="40%" stop-color="#8a4d19" />
+        <stop offset="70%" stop-color="#ba6f28" />
+        <stop offset="100%" stop-color="#3d1e06" />
+      </linearGradient>
+    </defs>
+    <!-- Woodgrain Surface -->
+    <rect width="1200" height="900" fill="url(#woodTable)" />
+    <!-- Wood Planks Lines -->
+    <line x1="0" y1="280" x2="1200" y2="280" stroke="#ab8761" stroke-width="2" opacity="0.4" />
+    <line x1="0" y1="580" x2="1200" y2="580" stroke="#ab8761" stroke-width="2" opacity="0.4" />
+    <!-- Angled Tablet Device (Left) -->
+    <g transform="translate(100, 100) rotate(-18)">
+      <rect x="0" y="0" width="480" height="660" rx="30" fill="#ffffff" stroke="#d4d4d4" stroke-width="4" filter="drop-shadow(0 20px 30px rgba(0,0,0,0.25))" />
+      <rect x="25" y="40" width="430" height="580" fill="#f4ede2" />
+      <!-- Website Header -->
+      <rect x="25" y="40" width="430" height="50" fill="#2d2d2d" />
+      <text x="50" y="70" font-family="'Bitter', serif" font-weight="bold" font-size="14" fill="#ffffff">KILIMANJARO LAGER</text>
+      <!-- Hero Image on Tablet with smiling man & mountain -->
+      <rect x="25" y="90" width="430" height="280" fill="#2b4c5f" />
+      <circle cx="160" cy="220" r="80" fill="#523223" />
+      <text x="250" y="200" font-family="'Bitter', Georgia, serif" font-style="italic" font-size="28" fill="#ffd15c">The taste</text>
+      <text x="250" y="240" font-family="'Bitter', Georgia, serif" font-weight="bold" font-size="36" fill="#ffffff">of success</text>
+    </g>
+    <!-- Real Glass Beer Bottle in Foreground -->
+    <g transform="translate(260, 280) rotate(-12)">
+      <!-- Neck -->
+      <path d="M120,40 L160,40 L165,180 L195,240 L195,580 L85,580 L85,240 L115,180 Z" fill="url(#beerBottle)" stroke="#221105" stroke-width="2" filter="drop-shadow(15px 25px 25px rgba(0,0,0,0.35))" />
+      <!-- Gold Foil Cap -->
+      <rect x="118" y="25" width="44" height="25" rx="3" fill="#eab308" stroke="#ca8a04" stroke-width="2" />
+      <!-- Label -->
+      <rect x="87" y="320" width="106" height="150" fill="#d97706" rx="4" />
+      <ellipse cx="140" cy="380" rx="40" ry="25" fill="#fef08a" />
+      <text x="140" y="385" font-family="'Bitter', serif" font-weight="900" font-size="11" fill="#78350f" text-anchor="middle">KILIMANJARO</text>
+    </g>
+    <!-- Smartphone in Foreground (Right) -->
+    <g transform="translate(560, 220) rotate(-6)">
+      <rect x="0" y="0" width="300" height="580" rx="40" fill="#09090b" stroke="#27272a" stroke-width="3" filter="drop-shadow(10px 20px 25px rgba(0,0,0,0.3))" />
+      <!-- Screen Display -->
+      <rect x="18" y="55" width="264" height="460" fill="#ffffff" />
+      <rect x="18" y="55" width="264" height="180" fill="#b45309" />
+      <text x="150" y="140" font-family="'Bitter', Georgia, serif" font-weight="bold" font-size="20" fill="#ffffff" text-anchor="middle">TASTE</text>
+      <text x="150" y="165" font-family="'Bitter', Georgia, serif" font-style="italic" font-size="16" fill="#fef08a" text-anchor="middle">REFRESHMENT</text>
+      <rect x="35" y="260" width="230" height="14" rx="3" fill="#e2e8f0" />
+      <rect x="35" y="290" width="180" height="14" rx="3" fill="#e2e8f0" />
+      <rect x="35" y="320" width="200" height="14" rx="3" fill="#e2e8f0" />
+      <circle cx="150" cy="548" r="18" fill="#18181b" stroke="#3f3f46" stroke-width="2" />
+    </g>
+  </svg>

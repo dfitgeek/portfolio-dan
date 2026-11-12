@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas Moeller — Design Portfolio</title>
+  <meta name="description" content="Senior Product Designer & Creative Director. Minimal personal design portfolio.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+
+  <!-- Google Fonts: Bricolage Grotesque (400-800), Bitter, and Source Sans 3 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Bitter:ital,wght@0,500;0,700;0,900;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Site Header (Not sticky, generous horizontal padding) -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="/" class="site-logo" id="siteLogo">THOMAS MOELLER</a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+
+      <!-- Navigation & Socials -->
+      <nav class="site-nav" id="siteNav">
+        <ul class="nav-links" id="siteNavLinks">
+          <li><a href="/" class="nav-link" data-route="projects" id="navProjects">PROJECTS</a></li>
+          <li><a href="/about" class="nav-link" data-route="about" id="navAbout">ABOUT ME</a></li>
+          <li><a href="/contact" class="nav-link" data-route="contact" id="navContact">CONTACT</a></li>
+        </ul>
+        <div class="social-links" id="socialLinks">
+          <!-- Dynamically populated from settings -->
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main View Container for SPA Rendering -->
+  <main id="app" class="site-main" role="main">
+    <div class="page-loader" id="pageLoader">
+      <div class="loader-spinner"></div>
+    </div>
+  </main>
+
+  <!-- Floating Circular Back-to-Top Button -->
+  <button class="floating-top-btn" id="floatingTopBtn" aria-label="Back to Top" title="Back to Top">
+    ↑
+  </button>
+
+  <!-- Scripts -->
+  <script src="/js/icons.js"></script>
+  <script src="/js/views/home.js"></script>
+  <script src="/js/views/project.js"></script>
+  <script src="/js/views/about.js"></script>
+  <script src="/js/views/contact.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

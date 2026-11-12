@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Dashboard — Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/admin/css/admin.css">
+</head>
+<body class="admin-body">
+  <div class="admin-layout">
+    <!-- Topbar -->
+    <header class="admin-topbar">
+      <div class="topbar-left">
+        <button id="sidebarToggle" class="sidebar-toggle-btn" aria-label="Toggle Sidebar">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+        <span class="admin-brand">Portfolio Admin</span>
+      </div>
+      <div class="topbar-right">
+        <a href="/" target="_blank" class="topbar-view-site" title="Open public site">
+          View Site
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+        <div class="topbar-user" id="topbarUsername">admin</div>
+        <button id="logoutBtn" class="topbar-logout-btn" title="Sign Out">Sign Out</button>
+      </div>
+    </header>
+
+    <div class="admin-main-wrap">
+      <!-- Sidebar Navigation -->
+      <aside class="admin-sidebar" id="adminSidebar">
+        <nav class="sidebar-nav">
+          <button class="nav-item active" data-tab="projects">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+            Projects
+            <span class="badge" id="badgeProjectCount">0</span>
+          </button>
+          <button class="nav-item" data-tab="about">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            About Page
+          </button>
+          <button class="nav-item" data-tab="contact">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Contact Page
+          </button>
+          <button class="nav-item" data-tab="messages">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H5V5h14v12zm-2-7h-4v4h-2v-4H7V8h4V4h2v4h4v2z"/></svg>
+            Inbox Messages
+            <span class="badge badge-accent" id="badgeUnreadCount" style="display: none;">0</span>
+          </button>
+          <button class="nav-item" data-tab="settings">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+            Site Settings
+          </button>
+          <button class="nav-item" data-tab="media">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+            Media Library
+          </button>
+          <button class="nav-item" data-tab="account">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+            Account &amp; Backups
+          </button>
+        </nav>
+      </aside>
+
+      <!-- Main Dashboard Pane Area -->
+      <main class="admin-content" id="adminContent">
+        <!-- 1. PROJECTS TAB -->
+        <section class="admin-pane active" id="pane-projects">
+          <div class="pane-header">
+            <div>
+              <h1 class="pane-title">Projects</h1>
+              <p class="pane-subtitle">Manage your portfolio projects, grid order, and content blocks.</p>
+            </div>
+            <button id="addProjectBtn" class="btn btn-primary">+ Add New Project</button>
+          </div>
+
+          <div class="pane-card">
+            <div class="table-toolbar">
+              <input type="text" id="projectSearchInput" class="form-control" placeholder="Search projects..." style="max-width: 280px;">
+              <span class="hint-text">Tip: Drag items or use arrows to rearrange the homepage grid order.</span>
+            </div>
+            <div class="table-responsive">
+              <table class="admin-table" id="projectsTable">
+                <thead>
+                  <tr>
+                    <th width="40">Order</th>
+                    <th width="80">Thumbnail</th>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Status</th>
+                    <th width="200" style="text-align: right;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="projectsTableBody">
+                  <!-- Populated by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. PROJECT EDITOR / CONTENT BUILDER VIEW -->
+        <section class="admin-pane" id="pane-project-editor">
+          <div class="pane-header">
+            <div>
+              <button id="backToProjectsBtn" class="btn btn-secondary btn-sm mb-2">← Back to Projects</button>
+              <h1 class="pane-title" id="editorTitle">Edit Project</h1>
+            </div>
+            <div class="btn-group">
+              <button id="saveProjectBtn" class="btn btn-primary">Save Project</button>
+              <button id="saveAndViewProjectBtn" class="btn btn-secondary">Save &amp; View</button>
+            </div>
+          </div>
+
+          <form id="projectForm" class="editor-grid">
+            <!-- Left Column: Metadata -->
+            <div class="editor-meta-column">
+              <div class="pane-card mb-4">
+                <h3 class="card-section-title">General Info</h3>
+                <div class="form-group mb-3">
+                  <label class="form-label" for="projTitle">Title *</label>
+                  <input type="text" id="projTitle" name="title" class="form-control" required placeholder="e.g. HBO GO">
+                </div>
+                <div class="form-group mb-3">
+                  <label class="form-label" for="projSlug">URL Slug</label>
+                  <input type="text" id="projSlug" name="slug" class="form-control" placeholder="auto-generated-from-title">
+                  <span class="hint-text">Used in /project/[slug]</span>
+                </div>
+                <div class="form-group mb-3">
+                  <label class="form-label" for="projYear">Year</label>
+                  <input type="text" id="projYear" name="year" class="form-control" placeholder="2024">
+                </div>
+                <div class="form-group mb-3">
+                  <label class="form-label" for="projDesc">Short Description</label>
+                  <textarea id="projDesc" name="shortDescription" class="form-control" rows="3" placeholder="Brief project summary shown under title..."></textarea>
+                </div>
+                <div class="form-group mb-3">
+                  <label class="form-label">Status</label>
+                  <div class="toggle-switch-wrapper">
+                    <input type="checkbox" id="projPublished" name="published" checked class="toggle-checkbox">
+                    <label for="projPublished" class="toggle-label"></label>
+                    <span id="projPublishedLabel" class="toggle-text">Published</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Thumbnail & Hover Color -->
+              <div class="pane-card mb-4">
+                <h3 class="card-section-title">Grid Appearance</h3>
+                <div class="form-group mb-3">
+                  <label class="form-label">Thumbnail Image</label>
+                  <div class="thumb-preview-box" id="thumbPreviewBox">
+                    <span class="thumb-placeholder">No thumbnail set</span>
+                    <img id="thumbPreviewImg" src="" alt="Thumbnail preview" style="display: none;">
+                  </div>
+                  <div class="thumb-actions mt-2">
+                    <button type="button" id="uploadThumbBtn" class="btn btn-secondary btn-sm">Upload Thumbnail</button>
+                    <input type="file" id="thumbFileInput" accept="image/*" style="display: none;">
+                    <button type="button" id="removeThumbBtn" class="btn btn-danger btn-sm" style="display: none;">Remove</button>
+                  </div>
+                  <input type="hidden" id="projThumbUrl" name="thumbnailUrl">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="projHoverColor">Hover Overlay Color</label>
+                  <div class="color-picker-row">
+                    <input type="color" id="projHoverColor" name="hoverOverlayColor" value="#7ec8b8" class="color-swatch">
+                    <input type="text" id="projHoverColorHex" class="form-control" value="#7ec8b8" style="max-width: 110px;">
+                  </div>
+                  <span class="hint-text">Defaults to site accent color</span>
+                </div>
+              </div>
+
+              <!-- SEO Meta -->
+              <div class="pane-card mb-4">
+                <h3 class="card-section-title">SEO Optimization</h3>
+                <div class="form-group mb-3">
+                  <label class="form-label" for="projSeoTitle">SEO Title</label>
+                  <input type="text" id="projSeoTitle" class="form-control" placeholder="Defaults to Project Title">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="projSeoDesc">SEO Description</label>
+                  <textarea id="projSeoDesc" class="form-control" rows="2" placeholder="Defaults to Short Description"></textarea>
+                </div>
+              </div>
+
+              <!-- Social Media Links & Icons -->
+              <div class="pane-card mb-4" id="projectSocialLinksCard">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                  <h3 class="card-section-title" style="margin-bottom: 0;">Social Media Links</h3>
+                  <button type="button" id="projResetSocialBtn" class="btn btn-secondary btn-sm" style="font-size: 11px; padding: 2px 8px;" title="Reset to standard share icons">Reset Defaults</button>
+                </div>
+                <p class="hint-text mb-3">Manage or remove the social share icons shown at the bottom of this project page.</p>
+
+                <div class="form-group mb-3">
+                  <div class="toggle-switch-wrapper">
+                    <input type="checkbox" id="projShowSocial" class="toggle-checkbox" checked>
+                    <label for="projShowSocial" class="toggle-label"></label>
+                    <span id="projShowSocialLabel" class="toggle-text">Show social icons on this project</span>
+                  </div>
+                </div>
+
+                <div id="projSocialContainer">
+                  <div id="projSocialList" class="mb-3">
+                    <!-- Populated dynamically -->
+                  </div>
+                  <button type="button" id="projAddSocialBtn" class="btn btn-secondary btn-sm">+ Add Social Link / Icon</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Content Builder -->
+            <div class="editor-blocks-column">
+              <div class="pane-card">
+                <div class="builder-header">
+                  <div>
+                    <h3 class="card-section-title" style="margin-bottom: 2px;">Project Content Builder</h3>
+                    <p class="hint-text">Add and arrange rich media content blocks for the project detail page.</p>
+                  </div>
+                  <!-- Add Block Menu -->
+                  <div class="dropdown">
+                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle" id="addBlockMenuBtn">+ Add Block</button>
+                    <div class="dropdown-menu" id="addBlockDropdown">
+                      <button type="button" class="dropdown-item" data-type="image">Standard Image</button>
+                      <button type="button" class="dropdown-item" data-type="wide_image">Full-Width (Wide) Image</button>
+                      <button type="button" class="dropdown-item" data-type="two_image">Two-Image Row</button>
+                      <button type="button" class="dropdown-item" data-type="text">Text / Rich Paragraph</button>
+                      <button type="button" class="dropdown-item" data-type="video">Video Embed (YouTube/Vimeo/MP4)</button>
+                      <button type="button" class="dropdown-item" data-type="spacer">Spacer Separator</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Multi-image Quick Dropzone -->
+                <div class="quick-dropzone mb-3" id="builderQuickDropzone">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                  <span>Drop multiple image files here to rapidly append image blocks</span>
+                  <input type="file" id="quickDropInput" multiple accept="image/*" style="display: none;">
+                </div>
+
+                <!-- Dynamic Blocks Container -->
+                <div class="blocks-container" id="blocksContainer">
+                  <!-- Populated dynamically -->
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <!-- 3. ABOUT PAGE TAB -->
+        <section class="admin-pane" id="pane-about">
+          <div class="pane-header">
+            <div>
+              <h1 class="pane-title">About Me Page</h1>
+              <p class="pane-subtitle">Edit the story, paragraphs, and personal portrait shown on your About page.</p>
+            </div>
+            <button id="saveAboutBtn" class="btn btn-primary">Save Changes</button>
+          </div>
+
+          <div class="pane-card max-w-3xl">
+            <div class="form-group mb-4">
+              <label class="form-label" for="aboutHeading">Page Heading *</label>
+              <input type="text" id="aboutHeading" class="form-control" value="About me">
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label">Body Paragraphs</label>
+              <div id="aboutParagraphsList" class="paragraphs-builder"></div>
+              <button type="button" id="addAboutParagraphBtn" class="btn btn-secondary btn-sm mt-2">+ Add Paragraph</button>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label" for="aboutPullquote">Indented Pull-Quote</label>
+              <textarea id="aboutPullquote" class="form-control" rows="3" placeholder="Inspiring quote or philosophy statement..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Optional Portrait Photo</label>
+              <div class="toggle-switch-wrapper mb-3">
+                <input type="checkbox" id="aboutShowPhoto" class="toggle-checkbox">
+                <label for="aboutShowPhoto" class="toggle-label"></label>
+                <span class="toggle-text">Show photo on About page</span>
+              </div>
+              <div class="thumb-preview-box" id="aboutPhotoPreviewBox">
+                <span class="thumb-placeholder">No portrait uploaded</span>
+                <img id="aboutPhotoImg" src="" alt="Portrait" style="display: none;">
+              </div>
+              <div class="mt-2">
+                <button type="button" id="uploadAboutPhotoBtn" class="btn btn-secondary btn-sm">Upload Photo</button>
+                <input type="file" id="aboutPhotoFileInput" accept="image/*" style="display: none;">
+                <button type="button" id="removeAboutPhotoBtn" class="btn btn-danger btn-sm" style="display: none;">Remove</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. CONTACT PAGE TAB -->
+        <section class="admin-pane" id="pane-contact">
+          <div class="pane-header">
+            <div>
+              <h1 class="pane-title">Contact Page</h1>
+              <p class="pane-subtitle">Edit direct contact details, intro text, and submission settings.</p>
+            </div>
+            <button id="saveContactBtn" class="btn btn-primary">Save Changes</button>
+          </div>
+
+          <div class="pane-card max-w-3xl">
+            <div class="form-group mb-4">
+              <label class="form-label" for="contactHeading">Page Heading *</label>
+              <input type="text" id="contactHeading" class="form-control" value="Contact">
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label" for="contactIntro">Intro Text</label>
+              <input type="text" id="contactIntro" class="form-control" value="Feel free to contact me in the following ways:">
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label">Direct Contact Methods</label>
+              <div id="contactMethodsList" class="methods-builder"></div>
+              <button type="button" id="addContactMethodBtn" class="btn btn-secondary btn-sm mt-2">+ Add Contact Method</button>
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label" for="contactFormIntro">Form Intro Line</label>
+              <input type="text" id="contactFormIntro" class="form-control" value="Or use the form below to send me an email!">
+            </div>
+
+            <div class="form-group mb-4">
+              <label class="form-label" for="contactSuccessMessage">Form Success Message</label>
+              <input type="text" id="contactSuccessMessage" class="form-control" value="Thank you for getting in touch! I'll get back to you shortly.">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Admin Notification Email</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="your-email@example.com">
+              <span class="hint-text">Used as reply recipient for inquiries.</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. INBOX MESSAGES TAB -->
+        <section class="admin-pane" id="pane-messages">
+          <div class="pane-header">
+            <div>
+              <h1 class="pane-title">Contact Inbox</h1>
+              <p class="pane-subtitle">Inquiries submitted through your public contact form.</p>
+            </div>
+          </div>
+
+          <div class="pane-card">
+            <div class="table-responsive">
+              <table class="admin-table" id="inboxTable">
+                <thead>
+                  <tr>
+                    <th width="120">Date</th>
+                    <th width="160">Sender</th>
+                    <th width="200">Email</th>
+                    <th>Message</th>
+                    <th width="140" style="text-align: right;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="inboxTableBody">
+                  <!-- Populated by JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6. SITE SETTINGS TAB -->
+        <section class="admin-pane" id="pane-settings">
+          <div class="pane-header">
+            <div>
+              <h1 class="pane-title">Site Settings</h1>
+              <p class="pane-subtitle">Branding, typography, header navigation labels, and social icons.</p>
+            </div>
+            <button id="saveSettingsBtn" class="btn btn-primary">Save Settings</button>
+          </div>
+
+          <div class="pane-card max-w-3xl">
+            <h3 class="card-section-title">Branding &amp; Identity</h3>
+            <div class="form-group mb-4">
+              <label class="form-label" for="settingSiteName">Site Logo / Name</label>
+              <input type="text" id="settingSiteName" class="form-control" value="DANIEL OLUSANYA">
+            </div>
+
+            <h3 class="card-section-title mt-4">Typography (Fonts)</h3>
+            <div class="grid grid-2 gap-3 mb-3">
+              <div>
+                <label class="form-label" for="settingFontHeading">Headings Font</label>
+                <select id="settingFontHeading" class="form-control">
+                  <option value="Bricolage Grotesque" selected>Bricolage Grotesque (Modern &amp; Bold)</option>
+                  <option value="Bitter">Bitter (Slab Serif)</option>
+                  <option value="Source Sans 3">Source Sans 3 (Clean Sans)</option>
+                  <option value="Inter">Inter (Neo-Grotesque)</option>
+                  <option value="Plus Jakarta Sans">Plus Jakarta Sans (Contemporary)</option>
+                  <option value="Playfair Display">Playfair Display (Editorial Serif)</option>
+                  <option value="Space Grotesk">Space Grotesk (Tech / Brutalist)</option>
+                  <option value="Syne">Syne (Creative Display)</option>
+                  <option value="Outfit">Outfit (Geometric Minimal)</option>
+                  <option value="DM Sans">DM Sans (Precision Sans)</option>
+                  <option value="__custom__">Custom Google Font...</option>
+                </select>
+                <input type="text" id="settingFontHeadingCustom" class="form-control mt-2" placeholder="e.g. Montserrat" style="display: none;">
+              </div>
+              <div>
+                <label class="form-label" for="settingFontBody">Body Text Font</label>
+                <select id="settingFontBody" class="form-control">
+                  <option value="Bricolage Grotesque" selected>Bricolage Grotesque</option>
+                  <option value="Source Sans 3">Source Sans 3</option>
+                  <option value="Inter">Inter</option>
+                  <option value="Plus Jakarta Sans">Plus Jakarta Sans</option>
+                  <option value="Bitter">Bitter</option>
+                  <option value="Outfit">Outfit</option>
+                  <option value="DM Sans">DM Sans</option>
+                  <option value="__custom__">Custom Google Font...</option>
+                </select>
+                <input type="text" id="settingFontBodyCustom" class="form-control mt-2" placeholder="e.g. Roboto" style="display: none;">
+              </div>
+            </div>
+
+            <h3 class="card-section-title mt-4">Color Palette</h3>
+            <div class="grid grid-3 gap-3 mb-3">
+              <div>
+                <label class="form-label" for="settingAccentColor">Accent Color</label>
+                <div class="color-picker-row">
+                  <input type="color" id="settingAccentColor" value="#9900ff" class="color-swatch">
+                  <input type="text" id="settingAccentColorHex" class="form-control" value="#9900ff" style="max-width: 110px;">
+                </div>
+                <div class="color-presets-row">
+                  <button type="button" class="color-preset-chip" style="background:#7ec8b8;" data-target="settingAccentColor" data-hex="#7ec8b8" title="Mint Teal"></button>
+                  <button type="button" class="color-preset-chip" style="background:#9900ff;" data-target="settingAccentColor" data-hex="#9900ff" title="Electric Purple"></button>
+                  <button type="button" class="color-preset-chip" style="background:#2563eb;" data-target="settingAccentColor" data-hex="#2563eb" title="Royal Blue"></button>
+                  <button type="button" class="color-preset-chip" style="background:#f97316;" data-target="settingAccentColor" data-hex="#f97316" title="Vibrant Coral"></button>
+                  <button type="button" class="color-preset-chip" style="background:#111111;" data-target="settingAccentColor" data-hex="#111111" title="Minimal Noir"></button>
+                </div>
+              </div>
+              <div>
+                <label class="form-label" for="settingBgColor">Background Color</label>
+                <div class="color-picker-row">
+                  <input type="color" id="settingBgColor" value="#ffffff" class="color-swatch">
+                  <input type="text" id="settingBgColorHex" class="form-control" value="#ffffff" style="max-width: 110px;">
+                </div>
+                <div class="color-presets-row">
+                  <button type="button" class="color-preset-chip" style="background:#ffffff;" data-target="settingBgColor" data-hex="#ffffff" title="Pure White"></button>
+                  <button type="button" class="color-preset-chip" style="background:#fafafa;" data-target="settingBgColor" data-hex="#fafafa" title="Off-White"></button>
+                  <button type="button" class="color-preset-chip" style="background:#f7f6f2;" data-target="settingBgColor" data-hex="#f7f6f2" title="Warm Paper"></button>
+                  <button type="button" class="color-preset-chip" style="background:#121212;" data-target="settingBgColor" data-hex="#121212" title="Dark Minimal"></button>
+                </div>
+              </div>
+              <div>
+                <label class="form-label" for="settingTextColor">Text / Heading Color</label>
+                <div class="color-picker-row">
+                  <input type="color" id="settingTextColor" value="#111111" class="color-swatch">
+                  <input type="text" id="settingTextColorHex" class="form-control" value="#111111" style="max-width: 110px;">
+                </div>
+                <div class="color-presets-row">
+                  <button type="button" class="color-preset-chip" style="background:#111111;" data-target="settingTextColor" data-hex="#111111" title="Near Black"></button>
+                  <button type="button" class="color-preset-chip" style="background:#334155;" data-target="settingTextColor" data-hex="#334155" title="Slate"></button>
+                  <button type="button" class="color-preset-chip" style="background:#ffffff;" data-target="settingTextColor" data-hex="#ffffff" title="Pure White"></button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Preview Box -->
+            <div class="font-preview-card" id="themePreviewBox" style="background-color: #ffffff; color: #111111;">
+              <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--admin-text-muted); display: block; margin-bottom: 8px;">Live Typography &amp; Color Preview</span>
+              <h2 id="previewHeading" style="font-size: 26px; font-weight: 700; margin-bottom: 8px; line-height: 1.2;">Bricolage Grotesque Heading</h2>
+              <p id="previewBody" style="font-size: 14px; line-height: 1.6; opacity: 0.8; margin-bottom: 14px;">This is a live preview of your selected typography pairing and color scheme across project titles and body narratives.</p>
+              <button type="button" id="previewAccentBtn" class="btn btn-sm" style="background-color: #9900ff; color: #ffffff; border: none; font-weight: 600;">Accent Color Button</button>
+            </div>
+
+            <h3 class="card-section-title mt-4">Header Navigation Links</h3>
+            <p class="hint-text mb-3">Customize your navigation menu. You can reorder links, add custom pages, or link to your CV (via direct PDF upload or external link).</p>
+            <div id="navLinksManager" class="mb-3">
+              <!-- Dynamically populated rows -->
+            </div>
+            <div class="btn-group mb-4">
+              <button type="button" id="addNavLinkBtn" class="btn btn-secondary btn-sm">+ Add Navigation Link</button>
+              <button type="button" id="addCvLinkBtn" class="btn btn-secondary btn-sm" title="Add CV or Resume Link">+ Add CV Link</button>
+            </div>
+
+            <h3 class="card-section-title mt-4">Header Social Links</h3>
+            <div id="socialLinksManager" class="mb-3"></div>
+            <button type="button" id="addCustomSocialBtn" class="btn btn-secondary btn-sm mb-4">+ Add Custom Social Link</button>
+
+            <h3 class="card-section-title mt-4">Project Page Default Social Links</h3>
+            <p class="hint-text mb-3">Configure the default social media share buttons for all project pages.</p>
+            <div class="form-group mb-3">
+              <div class="toggle-switch-wrapper">
+                <input type="checkbox" id="settingShowProjectSocial" class="toggle-checkbox" checked>
+                <label for="settingShowProjectSocial" class="toggle-label"></label>
+                <span id="settingShowProjectSocialLabel" class="toggle-text">Show social icons on project pages by default</span>
+              </div>
+            </div>
+            <div id="defaultProjectSocialLinksManager" class="mb-3"></div>
+            <div class="btn-group mb-4">
+              <button type="button" id="addDefaultProjectSocialBtn" class="btn btn-secondary btn-sm">+ Add Project Social Link</button>
+              <button type="button" id="resetDefaultProjectSocialBtn" class="btn btn-secondary btn-sm">Reset Defaults</button>
+            </div>
+
+            <h3 class="card-section-title mt-4">Footer</h3>
+            <div class="form-group mb-4">
+              <label class="form-label" for="settingFooterText">Footer Text</label>
+              <input type="text" id="settingFooterText" class="form-control" value="Powered by Adobe Portfolio">
+            </div>
+
+            <h3 class="card-section-title mt-4">Global SEO Defaults</h3>
+            <div class="form-group mb-3">
+              <label class="form-label" for="settingMetaTitle">Default Meta Title</label>
+              <input type="text" id="settingMetaTitle" class="form-control" placeholder="Thomas Moeller — Design Portfolio">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="settingMetaDesc">Default Meta Description</label>
+              <textarea id="settingMetaDesc" class="form-control" rows="2" placeholder="Minimal personal design portfolio..."></textarea>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7. MEDIA LIBRARY TAB -->
+        <section class="admin-pane" id="pane-media">
+          <div class="pane-header">
+            <div>
+              <h1 class="pane-title">Media Library</h1>
+              <p class="pane-subtitle">Manage uploaded project images and visual assets.</p>
+            </div>
+            <div>
+              <button id="uploadMediaBtn" class="btn btn-primary">+ Upload Media</button>
+              <input type="file" id="mediaFileInput" multiple accept="image/*" style="display: none;">
+            </div>
+          </div>
+
+          <div class="pane-card mb-4">
+            <div class="media-dropzone" id="mediaDropzone">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <p>Drag and drop images here, or click to upload</p>
+              <span class="hint-text">Supported: JPG, PNG, WEBP, GIF, SVG (up to 10 MB)</span>
+            </div>
+          </div>
+
+          <div class="pane-card">
+            <div class="media-grid" id="mediaGrid">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </section>
+
+        <!-- 8. ACCOUNT & BACKUPS TAB -->
+        <section class="admin-pane" id="pane-account">
+          <div class="pane-header">
+            <div>
+              <h1 class="pane-title">Account &amp; Backups</h1>
+              <p class="pane-subtitle">Security settings, data exports, and complete backup restoration.</p>
+            </div>
+          </div>
+
+          <div class="grid grid-2 gap-4">
+            <!-- Password Change -->
+            <div class="pane-card">
+              <h3 class="card-section-title">Change Password</h3>
+              <form id="accountPasswordForm">
+                <div class="form-group mb-3">
+                  <label class="form-label" for="accountCurrentPass">Current Password</label>
+                  <input type="password" id="accountCurrentPass" class="form-control" required placeholder="••••••••">
+                </div>
+                <div class="form-group mb-3">
+                  <label class="form-label" for="accountNewPass">New Password (min 8 chars)</label>
+                  <input type="password" id="accountNewPass" class="form-control" required minlength="8" placeholder="••••••••">
+                </div>
+                <div class="form-group mb-3">
+                  <label class="form-label" for="accountConfirmPass">Confirm New Password</label>
+                  <input type="password" id="accountConfirmPass" class="form-control" required minlength="8" placeholder="••••••••">
+                </div>
+                <button type="submit" id="updatePasswordBtn" class="btn btn-primary">Update Password</button>
+              </form>
+            </div>
+
+            <!-- Backups -->
+            <div class="pane-card">
+              <h3 class="card-section-title">Database &amp; Uploads Backup</h3>
+              <p class="text-sm text-slate-500 mb-4">Export a single zip file containing your complete database (<code class="bg-slate-100 p-1">db.json</code>) and all uploaded project media. You can restore this file anytime.</p>
+              
+              <div class="mb-4">
+                <a href="/admin/api/backup/export" id="exportBackupBtn" class="btn btn-primary inline-flex items-center gap-2">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  Export Complete Backup (.zip)
+                </a>
+              </div>
+
+              <hr class="border-t border-slate-200 my-4">
+
+              <h4 class="font-semibold text-sm text-slate-700 mb-2">Import / Restore Backup</h4>
+              <p class="text-xs text-slate-500 mb-3">Uploading a backup zip will restore database content and unpack image assets.</p>
+              <form id="importBackupForm" enctype="multipart/form-data">
+                <input type="file" id="backupZipInput" accept=".zip" required class="form-control mb-3">
+                <button type="submit" id="importBackupBtn" class="btn btn-secondary">Restore from Backup</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Confirmation Modal -->
+  <div class="modal-overlay" id="confirmModal">
+    <div class="modal-card">
+      <h3 class="modal-title" id="confirmModalTitle">Confirm Action</h3>
+      <p class="modal-message" id="confirmModalMessage">Are you sure you want to proceed?</p>
+      <div class="modal-actions">
+        <button id="confirmModalCancelBtn" class="btn btn-secondary">Cancel</button>
+        <button id="confirmModalOkBtn" class="btn btn-danger">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Scripts -->
+  <script src="/js/icons.js"></script>
+  <script src="/admin/js/admin.js"></script>
+  <script src="/admin/js/projects.js"></script>
+  <script src="/admin/js/content-builder.js"></script>
+  <script src="/admin/js/pages.js"></script>
+  <script src="/admin/js/messages.js"></script>
+  <script src="/admin/js/settings.js"></script>
+  <script src="/admin/js/media.js"></script>
+  <script src="/admin/js/account.js"></script>
+</body>
+</html>

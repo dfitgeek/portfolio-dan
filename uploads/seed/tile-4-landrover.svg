@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+    <defs>
+      <linearGradient id="desertSky" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#6e8499" />
+        <stop offset="50%" stop-color="#b0bcc7" />
+        <stop offset="100%" stop-color="#dfd2bd" />
+      </linearGradient>
+      <linearGradient id="desertDunes" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#d6b185" />
+        <stop offset="60%" stop-color="#c49b6b" />
+        <stop offset="100%" stop-color="#e3be93" />
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="900" fill="url(#desertSky)" />
+    <!-- Distant Dunes -->
+    <path d="M0,600 Q300,520 650,560 T1200,500 L1200,900 L0,900 Z" fill="url(#desertDunes)" />
+    <!-- Foreground Desert Ground -->
+    <path d="M0,680 Q400,640 850,700 T1200,680 L1200,900 L0,900 Z" fill="#b98f5f" />
+    <!-- Dust Cloud Explosion Behind Vehicle -->
+    <g fill="#d8ba92" opacity="0.85" filter="blur(25px)">
+      <circle cx="500" cy="730" r="120" />
+      <circle cx="650" cy="700" r="150" />
+      <circle cx="850" cy="650" r="180" />
+      <circle cx="1050" cy="620" r="160" />
+    </g>
+    <!-- Land Rover Oval Logo Badge -->
+    <g transform="translate(600, 150)">
+      <ellipse cx="0" cy="0" rx="42" ry="24" fill="#0c4728" stroke="#d5c898" stroke-width="2" />
+      <text x="0" y="4" font-family="'Bitter', serif" font-weight="bold" font-size="9" fill="#ffffff" text-anchor="middle" letter-spacing="1">LAND ROVER</text>
+    </g>
+    <!-- Subtitle -->
+    <text x="600" y="210" font-family="sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="5">2015 RANGE ROVER HSE</text>
+    <!-- Large Bold White Typography: EXPLORE. -->
+    <text x="600" y="440" font-family="'Bitter', Georgia, serif" font-weight="900" font-size="140" fill="#ffffff" text-anchor="middle" letter-spacing="8" opacity="0.95">EXPLORE.</text>
+    <!-- Luxury SUV Silhouette Speeding Left -->
+    <g transform="translate(60, 620)">
+      <!-- Car Body -->
+      <path d="M40,140 L80,120 L160,110 L250,55 L420,55 L460,95 L490,135 L470,165 L430,170 L380,170 L340,140 L280,140 L240,170 L140,170 L100,140 Z" fill="#d8dce2" stroke="#444" stroke-width="2" />
+      <!-- Windows / Roof -->
+      <path d="M255,62 L415,62 L445,98 L245,98 Z" fill="#1b2530" />
+      <line x1="330" y1="62" x2="330" y2="98" stroke="#d8dce2" stroke-width="4" />
+      <!-- Wheels -->
+      <circle cx="140" cy="165" r="38" fill="#1a1a1a" />
+      <circle cx="140" cy="165" r="24" fill="#888" stroke="#fff" stroke-width="2" />
+      <circle cx="380" cy="165" r="38" fill="#1a1a1a" />
+      <circle cx="380" cy="165" r="24" fill="#888" stroke="#fff" stroke-width="2" />
+      <!-- Headlight Beam -->
+      <polygon points="50,130 0,160 0,180 50,145" fill="#fff" opacity="0.7" />
+    </g>
+  </svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+    <defs>
+      <radialGradient id="hboGlow" cx="50%" cy="50%" r="60%">
+        <stop offset="0%" stop-color="#2d121c" />
+        <stop offset="60%" stop-color="#0e0a14" />
+        <stop offset="100%" stop-color="#050308" />
+      </radialGradient>
+      <linearGradient id="suitRed" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#e62020" />
+        <stop offset="30%" stop-color="#a60c18" />
+        <stop offset="70%" stop-color="#540710" />
+        <stop offset="100%" stop-color="#1d0408" />
+      </linearGradient>
+      <linearGradient id="lensReflect" x1="0%" y1="0%" x2="50%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+        <stop offset="40%" stop-color="#76c8d5" stop-opacity="0.8" />
+        <stop offset="70%" stop-color="#103a55" stop-opacity="0.9" />
+        <stop offset="100%" stop-color="#06121f" />
+      </linearGradient>
+    </defs>
+    <!-- Background Nightscape -->
+    <rect width="1200" height="900" fill="url(#hboGlow)" />
+    <!-- City Skyline Silhouette in background -->
+    <g fill="#161b26" opacity="0.6">
+      <rect x="50" y="300" width="80" height="600" />
+      <rect x="140" y="240" width="110" height="660" />
+      <rect x="260" y="380" width="70" height="520" />
+      <rect x="850" y="220" width="120" height="680" />
+      <rect x="980" y="310" width="90" height="590" />
+      <rect x="1080" y="260" width="100" height="640" />
+    </g>
+    <!-- Web Lines -->
+    <g stroke="#ffffff" stroke-opacity="0.18" stroke-width="2" fill="none">
+      <path d="M-100,-100 L1300,1000 M-100,500 L1300,400 M600,-100 L600,1000 M1300,-100 L-100,1000" />
+      <ellipse cx="600" cy="500" rx="350" ry="250" />
+      <ellipse cx="600" cy="500" rx="600" ry="420" />
+      <ellipse cx="600" cy="500" rx="900" ry="650" />
+    </g>
+    <!-- Suit Face Mask -->
+    <path d="M150,900 C150,450 350,150 600,150 C850,150 1050,450 1050,900 Z" fill="url(#suitRed)" />
+    <!-- Mask Hexagonal Pattern Texture -->
+    <g stroke="#000000" stroke-width="3" stroke-opacity="0.35" fill="none">
+      <path d="M600,150 L600,900 M600,150 L300,900 M600,150 L900,900 M600,150 L100,600 M600,150 L1100,600" />
+      <path d="M350,400 Q600,460 850,400 M300,550 Q600,630 900,550 M250,720 Q600,820 950,720" />
+    </g>
+    <!-- Dramatic Mask Eyes (Lens) -->
+    <!-- Left Eye Lens -->
+    <path d="M560,420 C540,320 400,280 260,340 C230,420 300,560 480,550 C540,540 565,490 560,420 Z" fill="#0c0c0e" />
+    <path d="M545,420 C525,335 405,300 280,350 C255,415 315,535 470,535 C525,525 550,480 545,420 Z" fill="url(#lensReflect)" stroke="#ffffff" stroke-width="4" stroke-opacity="0.4" />
+    <!-- Right Eye Lens -->
+    <path d="M640,420 C660,320 800,280 940,340 C970,420 900,560 720,550 C660,540 635,490 640,420 Z" fill="#0c0c0e" />
+    <path d="M655,420 C675,335 795,300 920,350 C945,415 885,535 730,535 C675,525 650,480 655,420 Z" fill="url(#lensReflect)" stroke="#ffffff" stroke-width="4" stroke-opacity="0.4" />
+    <!-- Cinematic Vignette -->
+    <rect width="1200" height="900" fill="none" stroke="#000" stroke-width="30" opacity="0.4" />
+  </svg>

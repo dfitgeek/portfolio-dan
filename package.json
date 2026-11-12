@@ -1,0 +1,33 @@
+{
+  "name": "design-portfolio",
+  "version": "1.0.0",
+  "description": "Minimalist personal design-portfolio website with secure admin panel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node scripts/seed.js",
+    "test": "node scripts/test.js",
+    "checkpoint:restore": "node scripts/revert-to-checkpoint.js"
+  },
+  "keywords": [
+    "portfolio",
+    "design",
+    "express",
+    "cms",
+    "admin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "archiver": "^7.0.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.18.1",
+    "helmet": "^8.0.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.10.0"
+  }
+}

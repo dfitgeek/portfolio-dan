@@ -1,0 +1,371 @@
+{
+  "settings": {
+    "siteName": "THOMAS MOELLER",
+    "navLabels": {
+      "projects": "PROJECTS",
+      "about": "ABOUT ME",
+      "contact": "CONTACT"
+    },
+    "socialLinks": [
+      {
+        "id": "twitter",
+        "name": "Twitter/X",
+        "url": "https://twitter.com/thomas_moeller",
+        "icon": "twitter",
+        "visible": true
+      },
+      {
+        "id": "behance",
+        "name": "Behance",
+        "url": "https://behance.net/ThomasMoeller",
+        "icon": "behance",
+        "visible": true
+      },
+      {
+        "id": "linkedin",
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/in/thomasjmoeller/",
+        "icon": "linkedin",
+        "visible": true
+      },
+      {
+        "id": "dribbble",
+        "name": "Dribbble",
+        "url": "https://dribbble.com/thomas_moeller",
+        "icon": "dribbble",
+        "visible": true
+      }
+    ],
+    "accentColor": "#7ec8b8",
+    "fontHeading": "Bitter",
+    "fontBody": "Source Sans 3",
+    "footerText": "Powered by Adobe Portfolio",
+    "faviconUrl": "",
+    "seo": {
+      "metaTitle": "Thomas Moeller — Design Portfolio",
+      "metaDescription": "Senior Product Designer & Creative Director. Crafting digital experiences, systems, and visual design."
+    }
+  },
+  "about": {
+    "heading": "About me",
+    "paragraphs": [
+      "I'm a believer in the fight. Keeping it simple. Being obsessive over craft, making it personal and giving a shit. I'm curious, empathetic, rigorous, and experimental. I appreciate a holistic way of solving design problems in collaborative teams. I like accelerated methodologies. Thinking quick, rapid prototyping, and learning through testing but not discounting a designer's intuition.",
+      "I seek to learn what works and do more of it. Learn what doesn't and change it.",
+      "As a design leader, I seek to own creative excellence at every touch-point. I'm a passionate student of real-world design, users, consumers, trends, competitors and culture. Through listening, learning and mining insights, I fight for work that directs my client's brand into amazing places."
+    ],
+    "pullquote": "I'm a firm believer that simple is hard. And that design is truly about problem solving and making people's lives better.",
+    "photoUrl": "",
+    "showPhoto": false
+  },
+  "contact": {
+    "heading": "Contact",
+    "intro": "Feel free to contact me in the following ways:",
+    "directMethods": [
+      {
+        "label": "Phone",
+        "value": "(347) 668-1576",
+        "link": "tel:3476681576"
+      },
+      {
+        "label": "Twitter",
+        "value": "twitter.com/thomas_moeller",
+        "link": "https://twitter.com/thomas_moeller"
+      },
+      {
+        "label": "Behance",
+        "value": "behance.net/ThomasMoeller",
+        "link": "https://behance.net/ThomasMoeller"
+      },
+      {
+        "label": "Dribbble",
+        "value": "dribbble.com/thomas_moeller",
+        "link": "https://dribbble.com/thomas_moeller"
+      },
+      {
+        "label": "Linkedin",
+        "value": "linkedin.com/in/thomasjmoeller/",
+        "link": "https://linkedin.com/in/thomasjmoeller/"
+      }
+    ],
+    "formIntro": "Or use the form below to send me an email!",
+    "contactEmail": "thomas.moeller@example.com",
+    "successMessage": "Thank you for getting in touch! I'll get back to you shortly.",
+    "showPhone": true,
+    "showSocials": true
+  },
+  "projects": [
+    {
+      "id": "proj_hbo_go",
+      "title": "HBO GO",
+      "slug": "hbo-go",
+      "year": "2014",
+      "shortDescription": "I was asked to quickly conceptualize some high level visual treatments for the HBO Go interface - establishing a top line visual language and system that could be then applied to their apps and other device platforms. As an initial dive into the system, the exploration touched upon a few visual elements that inspired us to dig deeper.",
+      "thumbnailUrl": "/uploads/seed/tile-1-hbogo.svg",
+      "hoverOverlayColor": "#7ec8b8",
+      "published": true,
+      "order": 0,
+      "blocks": [
+        {
+          "id": "b1",
+          "type": "wide_image",
+          "url": "/uploads/seed/tile-1-hbogo.svg",
+          "alt": "HBO GO Cinematic Hero Visual",
+          "caption": "High-contrast visual language exploratory for streaming entertainment surfaces."
+        },
+        {
+          "id": "b2",
+          "type": "text",
+          "content": "<p>The core objective was to balance cinematic immersion with swift content discoverability. We explored fluid navigation paradigms, high-contrast imagery, and focused typography hierarchies that translate effortlessly from mobile screens to 10-foot living room displays.</p>"
+        },
+        {
+          "id": "b3",
+          "type": "two_image",
+          "images": [
+            {
+              "url": "/uploads/seed/tile-2-forbes.svg",
+              "alt": "Interface Component 1",
+              "caption": "Typography and navigation grid"
+            },
+            {
+              "url": "/uploads/seed/tile-3-weather.svg",
+              "alt": "Interface Component 2",
+              "caption": "Color palette and tonal contrast"
+            }
+          ]
+        },
+        {
+          "id": "b4",
+          "type": "text",
+          "content": "<p>By stripping down superfluous borders and relying strictly on spatial rhythm and dramatic lighting, the interface steps back to allow the studio's premier storytelling to command complete focus.</p>"
+        },
+        {
+          "id": "b5",
+          "type": "wide_image",
+          "url": "/uploads/seed/hbogo-spiderman-wide.svg",
+          "alt": "HBO GO Architecture Diagram",
+          "caption": "Design system tokens and responsive breakout grid."
+        }
+      ],
+      "seo": {
+        "metaTitle": "HBO GO Interface System — Thomas Moeller",
+        "metaDescription": "Visual design treatments and conceptual design system for HBO GO cross-device streaming platforms."
+      },
+      "createdAt": "2014-06-15T10:00:00.000Z",
+      "updatedAt": "2014-06-15T10:00:00.000Z"
+    },
+    {
+      "id": "proj_forbes_30u30",
+      "title": "Forbes '30 Under 30'",
+      "slug": "forbes-30-under-30",
+      "year": "2015",
+      "shortDescription": "An editorial mobile application experience celebrating the yearly innovators and game-changers across twelve global industries.",
+      "thumbnailUrl": "/uploads/seed/tile-2-forbes.svg",
+      "hoverOverlayColor": "#7ec8b8",
+      "published": true,
+      "order": 1,
+      "blocks": [
+        {
+          "id": "fb1",
+          "type": "image",
+          "url": "/uploads/seed/tile-2-forbes.svg",
+          "alt": "Forbes 30 Under 30 App",
+          "caption": "Tactile card interactions designed for quick browsing on high-density displays."
+        },
+        {
+          "id": "fb2",
+          "type": "text",
+          "content": "<p>The annual Forbes 30 Under 30 list required a fresh, energetic presentation that departed from traditional newsprint feeds. We designed a swipeable profile system that combined bold editorial typography with personal interviews, audio snippets, and career milestones.</p>"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Forbes 30 Under 30 — Thomas Moeller",
+        "metaDescription": "Mobile editorial app design for Forbes 30 Under 30."
+      }
+    },
+    {
+      "id": "proj_weather_time",
+      "title": "Atmosphere & Weather",
+      "slug": "atmosphere-weather",
+      "year": "2015",
+      "shortDescription": "A glanceable environmental dashboard tracking atmospheric pressure, surf conditions, and daylight shifts across global locations.",
+      "thumbnailUrl": "/uploads/seed/tile-3-weather.svg",
+      "hoverOverlayColor": "#7ec8b8",
+      "published": true,
+      "order": 2,
+      "blocks": [
+        {
+          "id": "w1",
+          "type": "image",
+          "url": "/uploads/seed/tile-3-weather.svg",
+          "alt": "Atmosphere Dashboard",
+          "caption": "Minimalist quadrant layout highlighting primary meteorological signals."
+        },
+        {
+          "id": "w2",
+          "type": "text",
+          "content": "<p>Designed for expedition leaders and ocean athletes who need immediate clarity without digging through nested menus. The four-quadrant layout adapts dynamically according to tidal shifts, wind direction, and solar zenith.</p>"
+        }
+      ]
+    },
+    {
+      "id": "proj_land_rover",
+      "title": "Land Rover Explore",
+      "slug": "land-rover-explore",
+      "year": "2015",
+      "shortDescription": "A digital campaign and interactive 3D configurator designed for the rugged 2015 Range Rover HSE launch across North America.",
+      "thumbnailUrl": "/uploads/seed/tile-4-landrover.svg",
+      "hoverOverlayColor": "#7ec8b8",
+      "published": true,
+      "order": 3,
+      "blocks": [
+        {
+          "id": "lr1",
+          "type": "wide_image",
+          "url": "/uploads/seed/tile-4-landrover.svg",
+          "alt": "Land Rover Explore Campaign",
+          "caption": "Hero campaign imagery combining desert terrain photography with digital typography."
+        },
+        {
+          "id": "lr2",
+          "type": "text",
+          "content": "<p>The Explore campaign challenged conventional automotive configurators by pairing real GPS route data with tactile terrain rendering. Prospective drivers could simulate journeys across desert canyons, snow passes, and coastal highways while customizing vehicle specifications.</p>"
+        }
+      ]
+    },
+    {
+      "id": "proj_generations",
+      "title": "Generations",
+      "slug": "generations",
+      "year": "2016",
+      "shortDescription": "Art direction and brand photography capturing authentic moments of human connection, heritage, and timeless family legacy.",
+      "thumbnailUrl": "/uploads/seed/tile-5-portrait.svg",
+      "hoverOverlayColor": "#7ec8b8",
+      "published": true,
+      "order": 4,
+      "blocks": [
+        {
+          "id": "g1",
+          "type": "image",
+          "url": "/uploads/seed/tile-5-portrait.svg",
+          "alt": "Generations Portrait Photography",
+          "caption": "Natural light photography focusing on unfiltered emotion and family connection."
+        },
+        {
+          "id": "g2",
+          "type": "text",
+          "content": "<p>A visual essay examining how design, values, and memory are transmitted across generations. Shot entirely in natural golden-hour illumination across Northern California.</p>"
+        }
+      ]
+    },
+    {
+      "id": "proj_telemetry_app",
+      "title": "Telemetry Track App",
+      "slug": "telemetry-track-app",
+      "year": "2014",
+      "shortDescription": "High-precision automotive telemetry software and companion mobile app developed for track-day drivers and performance tuning engineers.",
+      "thumbnailUrl": "/uploads/seed/tile-6-telemetry.svg",
+      "hoverOverlayColor": "#7ec8b8",
+      "published": true,
+      "order": 5,
+      "blocks": [
+        {
+          "id": "t1",
+          "type": "image",
+          "url": "/uploads/seed/tile-6-telemetry.svg",
+          "alt": "Track Telemetry Mobile Application",
+          "caption": "Real-time lap timing, speed deltas, and G-force mapping."
+        },
+        {
+          "id": "t2",
+          "type": "text",
+          "content": "<p>Track drivers need instantaneous split-second telemetry without distracting from the road ahead. We engineered high-contrast typography and color-coded delta zones that remain readable under harsh cockpit sunlight and vibration.</p>"
+        }
+      ]
+    },
+    {
+      "id": "proj_kilimanjaro",
+      "title": "Kilimanjaro Digital",
+      "slug": "kilimanjaro-digital",
+      "year": "2013",
+      "shortDescription": "Cross-platform digital brand identity and responsive web application for East Africa's flagship beverage brand.",
+      "thumbnailUrl": "/uploads/seed/tile-7-kilimanjaro.svg",
+      "hoverOverlayColor": "#7ec8b8",
+      "published": true,
+      "order": 6,
+      "blocks": [
+        {
+          "id": "k1",
+          "type": "image",
+          "url": "/uploads/seed/tile-7-kilimanjaro.svg",
+          "alt": "Kilimanjaro Responsive Ecosystem",
+          "caption": "Responsive web design tested across tablet, mobile, and desktop environments."
+        },
+        {
+          "id": "k2",
+          "type": "text",
+          "content": "<p>Emphasizing the authentic heritage of Mount Kilimanjaro, the digital brand system blends rich warm tones, wood textures, and interactive storytelling to engage both local communities and international travelers.</p>"
+        }
+      ]
+    },
+    {
+      "id": "proj_mclaren_p1",
+      "title": "McLaren P1 Launch",
+      "slug": "mclaren-p1-launch",
+      "year": "2014",
+      "shortDescription": "An interactive digital experience and web portal showcasing the groundbreaking aerodynamics and hybrid powertrain of the McLaren P1 hypercar.",
+      "thumbnailUrl": "/uploads/seed/tile-8-mclaren.svg",
+      "hoverOverlayColor": "#7ec8b8",
+      "published": true,
+      "order": 7,
+      "blocks": [
+        {
+          "id": "m1",
+          "type": "wide_image",
+          "url": "/uploads/seed/tile-8-mclaren.svg",
+          "alt": "McLaren P1 Aerodynamics Visual",
+          "caption": "Dynamic computational fluid dynamics visualization and active rear wing aero simulation."
+        },
+        {
+          "id": "m2",
+          "type": "text",
+          "content": "<p>To unveil McLaren's pinnacle hybrid supercar, we crafted an interactive portal detailing active aerodynamic downforce, chassis dynamics, and powertrain telemetry at 200+ mph.</p>"
+        }
+      ]
+    },
+    {
+      "id": "proj_volvo_fh",
+      "title": "Volvo FH Experience",
+      "slug": "volvo-fh-experience",
+      "year": "2015",
+      "shortDescription": "An interactive multi-touch transparent glass showroom installation allowing customers to explore truck anatomy, custom cabins, and powertrain safety.",
+      "thumbnailUrl": "/uploads/seed/tile-9-volvo.svg",
+      "hoverOverlayColor": "#7ec8b8",
+      "published": true,
+      "order": 8,
+      "blocks": [
+        {
+          "id": "v1",
+          "type": "image",
+          "url": "/uploads/seed/tile-9-volvo.svg",
+          "alt": "Volvo FH Interactive Showroom Glass Display",
+          "caption": "Touchscreen installation allowing commercial buyers to dissect truck engineering in real time."
+        },
+        {
+          "id": "v2",
+          "type": "text",
+          "content": "<p>Installed across premier European showroom centers, this interactive transparent glass screen lets prospective fleet buyers touch, rotate, and configure complex heavy transport vehicles with intuitive gestures.</p>"
+        }
+      ]
+    }
+  ],
+  "inbox": [],
+  "users": [
+    {
+      "id": "admin",
+      "username": "admin",
+      "passwordHash": "$2a$10$PS7fNFEyS7cw6fBtmAA9yumwRH.DPJ6e4chHqxwfFmRSilZPTKEZq",
+      "mustChangePassword": true,
+      "updatedAt": "2026-11-12T15:12:11.881Z"
+    }
+  ]
+}

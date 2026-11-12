@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+    <defs>
+      <linearGradient id="showroomBg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3c4354" />
+        <stop offset="50%" stop-color="#2a3040" />
+        <stop offset="100%" stop-color="#1b202e" />
+      </linearGradient>
+      <linearGradient id="glassScreen" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+        <stop offset="50%" stop-color="#e2ebf4" stop-opacity="0.85" />
+        <stop offset="100%" stop-color="#bcd2e8" stop-opacity="0.9" />
+      </linearGradient>
+    </defs>
+    <!-- Dark Architectural Showroom Interior -->
+    <rect width="1200" height="900" fill="url(#showroomBg)" />
+    <!-- Ambient Showroom Spotlights -->
+    <ellipse cx="800" cy="100" rx="300" ry="80" fill="#88b5e2" opacity="0.15" filter="blur(40px)" />
+    <!-- Huge Floating Transparent Glass Screen (Angled) -->
+    <g transform="translate(180, 80) skewY(-6)" filter="drop-shadow(20px 30px 40px rgba(0,0,0,0.4))">
+      <!-- Glass Screen Background -->
+      <rect x="0" y="0" width="760" height="640" rx="16" fill="url(#glassScreen)" stroke="#ffffff" stroke-width="4" />
+      <!-- Header / Volvo Logo -->
+      <text x="50" y="70" font-family="sans-serif" font-weight="900" font-size="13" fill="#64748b" letter-spacing="2">360° INTERACTIVE</text>
+      <!-- Title -->
+      <text x="50" y="125" font-family="'Bitter', Georgia, serif" font-weight="900" font-size="44" fill="#1e293b" letter-spacing="1">EXPERIENCE</text>
+      <text x="50" y="170" font-family="'Bitter', Georgia, serif" font-weight="900" font-size="44" fill="#1e293b" letter-spacing="1">THE FH</text>
+      <!-- Volvo Iron Mark Logo -->
+      <circle cx="680" cy="115" r="26" fill="none" stroke="#1e293b" stroke-width="5" />
+      <text x="680" y="120" font-family="'Bitter', serif" font-weight="bold" font-size="9" fill="#1e293b" text-anchor="middle">VOLVO</text>
+      <!-- Spec Text Paragraph -->
+      <text x="50" y="220" font-family="sans-serif" font-size="10" fill="#475569">Engineered for long-haul performance.</text>
+      <text x="50" y="240" font-family="sans-serif" font-size="10" fill="#475569">Featuring revolutionary I-Shift dual clutch.</text>
+      <!-- 3D Turntable Base -->
+      <ellipse cx="480" cy="460" rx="200" ry="45" fill="#a48c77" stroke="#ffffff" stroke-width="4" />
+      <!-- Volvo FH Green Truck on Turntable -->
+      <g transform="translate(360, 200)">
+        <!-- Cab Body -->
+        <rect x="50" y="40" width="140" height="200" rx="10" fill="#587965" stroke="#233529" stroke-width="3" />
+        <!-- Huge Windshield Glass -->
+        <path d="M55,60 L185,60 L180,120 L60,120 Z" fill="#0f172a" />
+        <!-- Headlights -->
+        <polygon points="55,190 75,190 70,225 55,220" fill="#f8fafc" />
+        <polygon points="185,190 165,190 170,225 185,220" fill="#f8fafc" />
+        <!-- Grille & Volvo Diagonal Sash -->
+        <rect x="75" y="150" width="90" height="70" fill="#334155" rx="4" />
+        <line x1="80" y1="155" x2="160" y2="215" stroke="#94a3b8" stroke-width="4" />
+      </g>
+    </g>
+    <!-- Human Hand Touching Display in Foreground -->
+    <g transform="translate(860, 380)">
+      <!-- Arm coming from right -->
+      <path d="M340,320 L160,220 L60,160 C30,140 10,100 0,60 C-10,30 20,20 40,40 L100,100 L180,140 L340,220 Z" fill="#d4aa94" filter="drop-shadow(0 15px 25px rgba(0,0,0,0.35))" />
+      <!-- Interactive Touch Ripple -->
+      <circle cx="0" cy="55" r="14" fill="#ffffff" opacity="0.8" />
+      <circle cx="0" cy="55" r="30" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.6" />
+    </g>
+  </svg>

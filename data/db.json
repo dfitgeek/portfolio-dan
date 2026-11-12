@@ -1,0 +1,1212 @@
+{
+  "settings": {
+    "siteName": "OLUSANYA DANIEL",
+    "navLabels": {
+      "projects": "PROJECTS",
+      "about": "ABOUT ME",
+      "contact": "CONTACT"
+    },
+    "navLinks": [
+      {
+        "id": "nav_projects",
+        "label": "PROJECTS",
+        "url": "/",
+        "isExternal": false,
+        "visible": true
+      },
+      {
+        "id": "nav_about_me",
+        "label": "ABOUT ME",
+        "url": "/about",
+        "isExternal": false,
+        "visible": true
+      },
+      {
+        "id": "nav_contact",
+        "label": "CONTACT",
+        "url": "/contact",
+        "isExternal": false,
+        "visible": true
+      },
+      {
+        "id": "nav_cv",
+        "label": "CV",
+        "url": "https://drive.google.com/file/d/1PoWmevqumr3x-EKZphgGT5j6aZaCZYdD/view",
+        "isExternal": true,
+        "visible": true
+      }
+    ],
+    "socialLinks": [],
+    "accentColor": "#feab2d",
+    "backgroundColor": "#ffffff",
+    "textColor": "#111111",
+    "fontHeading": "Bricolage Grotesque",
+    "fontBody": "DM Sans",
+    "footerText": "Powered by Olusanya Daniel",
+    "showProjectSocialLinks": true,
+    "projectSocialLinks": [
+      {
+        "id": "pinterest",
+        "name": "Pinterest",
+        "icon": "pinterest",
+        "url": "https://pinterest.com/pin/create/button/?url={url}&description={title}",
+        "visible": true
+      },
+      {
+        "id": "twitter",
+        "name": "Twitter / X",
+        "icon": "twitter",
+        "url": "https://twitter.com/intent/tweet?url={url}&text={title}",
+        "visible": true
+      },
+      {
+        "id": "facebook",
+        "name": "Facebook",
+        "icon": "facebook",
+        "url": "https://www.facebook.com/sharer/sharer.php?u={url}",
+        "visible": true
+      },
+      {
+        "id": "tumblr",
+        "name": "Tumblr",
+        "icon": "tumblr",
+        "url": "https://www.tumblr.com/widgets/share/tool?canonicalUrl={url}&title={title}",
+        "visible": true
+      }
+    ],
+    "seo": {
+      "metaTitle": "Olusanya Daniel — Design Portfolio",
+      "metaDescription": "Senior Product Designer & Creative Director. Crafting digital experiences, systems, and visual design."
+    }
+  },
+  "about": {
+    "heading": "About me",
+    "paragraphs": [
+      "I'm a believer in the fight. Keeping it simple. Being obsessive over craft, making it personal and giving a shit. I'm curious, empathetic, rigorous, and experimental. I appreciate a holistic way of solving design problems in collaborative teams. I like accelerated methodologies. Thinking quick, rapid prototyping, and learning through testing but not discounting a designer's intuition.",
+      "I seek to learn what works and do more of it. Learn what doesn't and change it.",
+      "As a design leader, I seek to own creative excellence at every touch-point. I'm a passionate student of real-world design, users, consumers, trends, competitors and culture. Through listening, learning and mining insights, I fight for work that directs my client's brand into amazing places."
+    ],
+    "pullquote": "I'm a firm believer that simple is hard. And that design is truly about problem solving and making people's lives better.",
+    "photoUrl": "",
+    "showPhoto": false
+  },
+  "contact": {
+    "heading": "Contact",
+    "intro": "Feel free to contact me in the following ways:",
+    "directMethods": [
+      {
+        "label": "Phone",
+        "value": "(347) 668-1576",
+        "link": "tel:3476681576"
+      },
+      {
+        "label": "Twitter",
+        "value": "twitter.com/thomas_moeller",
+        "link": "https://twitter.com/thomas_moeller"
+      },
+      {
+        "label": "Behance",
+        "value": "behance.net/ThomasMoeller",
+        "link": "https://behance.net/ThomasMoeller"
+      },
+      {
+        "label": "Dribbble",
+        "value": "dribbble.com/thomas_moeller",
+        "link": "https://dribbble.com/thomas_moeller"
+      },
+      {
+        "label": "Linkedin",
+        "value": "linkedin.com/in/thomasjmoeller/",
+        "link": "https://linkedin.com/in/thomasjmoeller/"
+      }
+    ],
+    "formIntro": "Or use the form below to send me an email!",
+    "contactEmail": "thomas.moeller@example.com",
+    "successMessage": "Thank you for getting in touch! I'll get back to you shortly.",
+    "showPhone": true,
+    "showSocials": true
+  },
+  "projects": [
+    {
+      "id": "proj_hbo_go",
+      "title": "Social Media Designs",
+      "slug": "smf",
+      "year": "2025 - Current",
+      "shortDescription": "I've had the opportunity to work with different brands, helping them bring their ideas to life through thoughtful and visually compelling designs.",
+      "thumbnailUrl": "/uploads/1794511915682-feedme-design-ded605d9.png",
+      "hoverOverlayColor": "#feab2d",
+      "published": true,
+      "order": 0,
+      "blocks": [
+        {
+          "id": "b1",
+          "type": "wide_image",
+          "url": "/uploads/1794486975099-social-media-flyers-3--9eb0fd89.gif",
+          "alt": "Social Media flyers Hero Visual",
+          "caption": "I design visuals that help brands look and feel like themselves. "
+        },
+        {
+          "id": "b_1794500972008_tm5u",
+          "type": "image",
+          "url": "/uploads/1794514362782-feedme-carousel-content-7b7af522.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794514600874_pnbe",
+          "type": "image",
+          "url": "/uploads/1794514627805-linkedin-esther-8f190ac2.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b3",
+          "type": "two_image",
+          "images": [
+            {
+              "url": "/uploads/1794514532242-8-953cb368.png",
+              "alt": "Interface Component 1",
+              "caption": "DC Fashion"
+            },
+            {
+              "url": "/uploads/1794514435385-6-00cfd58c.png",
+              "alt": "",
+              "caption": "DC Fashion"
+            }
+          ]
+        },
+        {
+          "id": "b_1794514668128_pjhj",
+          "type": "image",
+          "url": "/uploads/1794514668110-0e1086eaf14892c9583979e25ee138a6-6c4b78b4.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794515009548_ld0c",
+          "type": "two_image",
+          "images": [
+            {
+              "url": "/uploads/1794515023974-copy-of-skincare-f00f8d90.png",
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "/uploads/1794515030946-copy-of-skincare-1--5d1a6fb0.png",
+              "alt": "",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "b_1794514668128_n0mx",
+          "type": "image",
+          "url": "/uploads/1794514668114-8730d09782d22ea199fa736f3dd711fb-34b78cd0.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794515041231_yoog",
+          "type": "two_image",
+          "images": [
+            {
+              "url": "/uploads/1794515048319-copy-of-gadget-shop-template-1--b5784376.png",
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "/uploads/1794515056598-copy-of-gadget-shop-template-2--0863d12b.png",
+              "alt": "",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "b_1794519734432_96j6",
+          "type": "image",
+          "url": "/uploads/1794519734425-ccb94etjfpexs8ekujxd1ajgtmk-bb2a4da4.webp",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794515152569_d0e5",
+          "type": "two_image",
+          "images": [
+            {
+              "url": "/uploads/1794515173518-bettabuilder-2-2--ba298ea2.png",
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "/uploads/1794515178115-bettabuilder-2-5654c0b0.png",
+              "alt": "",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "b_1794514870240_93gd",
+          "type": "image",
+          "url": "/uploads/1794514870101-5b39cab4889ef092e38f9e4226ca0fbb-6102fa5c.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794515210615_ev25",
+          "type": "two_image",
+          "images": [
+            {
+              "url": "/uploads/1794515221239-feedme-carousel-content-1--6e8d0d88.png",
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "/uploads/1794515230957-feedme-carousel-content-2--6bca5ad4.png",
+              "alt": "",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "b_1794514870240_1bw0",
+          "type": "image",
+          "url": "/uploads/1794514870113-c10400a3517ef794555696c03c7c8e32-8a7280f8.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794515250860_8f35",
+          "type": "two_image",
+          "images": [
+            {
+              "url": "/uploads/1794515271243-march-design-e99f8371.png",
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "/uploads/1794515292496-june-6c00b64e.png",
+              "alt": "",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "b_1794514870240_a4v1",
+          "type": "image",
+          "url": "/uploads/1794514870114-copy-of-church-designs-d114f709.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794515004637_9xwx",
+          "type": "image",
+          "url": "/uploads/1794515004618-safemedseniors-1200-x-627-px--fd3001cd.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794519734432_17x9",
+          "type": "image",
+          "url": "/uploads/1794519734424-kegajqtr727q0pep9nbzlrp5kog-50a73233.webp",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794515612961_m2q7",
+          "type": "two_image",
+          "images": [
+            {
+              "url": "/uploads/1794515636347-28d384dbe3a2573b60e1763d8e0938e4-c7ac0785.jpg",
+              "alt": "",
+              "caption": ""
+            },
+            {
+              "url": "/uploads/1794515641039-101b777d0562c5ca998c6a4348a99c0b-30d108e5.jpg",
+              "alt": "",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "id": "b_1794519772787_21w4",
+          "type": "image",
+          "url": "/uploads/1794519772784-u4nurpiuwfll3dob1juczsnqr0-1e2588d8.webp",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794519509651_qep6",
+          "type": "image",
+          "url": "/uploads/1794519509633-feedme-carousel-content-3--88ce7d43.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794514870240_m275",
+          "type": "image",
+          "url": "/uploads/1794514870162-copy-of-gadget-shop-template-df3e49ff.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794515657531_8ypl",
+          "type": "wide_image",
+          "url": "/uploads/1794515665407-copy-of-gadget-shop-template-4--1ae3471c.png",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "seo": {
+        "metaTitle": "Social Media Flyers — Olusanya Daniel",
+        "metaDescription": "Creative design"
+      },
+      "createdAt": "2014-06-15T10:00:00.000Z",
+      "updatedAt": "2026-11-12T21:44:20.006Z",
+      "showSocialLinks": true,
+      "socialLinks": []
+    },
+    {
+      "id": "proj_land_rover",
+      "title": "Brand Designs",
+      "slug": "brand-designs",
+      "year": "2025 - Current",
+      "shortDescription": "From choosing the right visual direction to creating cohesive brand elements, I enjoy turning ideas into identities that communicate a brand's personality, tell its story, and make it memorable.",
+      "thumbnailUrl": "/uploads/1794518790594-76ee3e9a6d3336dbe8b898b0ee4f8231-376dcf06.jpg",
+      "hoverOverlayColor": "#feab2d",
+      "published": true,
+      "order": 1,
+      "blocks": [
+        {
+          "id": "lr1",
+          "type": "wide_image",
+          "url": "/uploads/1794517881170-social-media-flyers-4bc7ee77.gif",
+          "alt": "Land Rover Explore Campaign",
+          "caption": "Hero campaign imagery combining desert terrain photography with digital typography."
+        },
+        {
+          "id": "b_1794519233035_7jcy",
+          "type": "image",
+          "url": "/uploads/1794519233019-oriri-estate-1-1-81d52ba8.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794519233035_9r9t",
+          "type": "image",
+          "url": "/uploads/1794519233026-oriri-estate-1-2-f8230f91.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794519233035_np95",
+          "type": "image",
+          "url": "/uploads/1794519233030-oriri-estate-2-1-4170eb6c.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794519287626_mx19",
+          "type": "image",
+          "url": "/uploads/1794519287587-group-3-7047efea.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794519287626_03bd",
+          "type": "image",
+          "url": "/uploads/1794519287596-group-4-5ed6d7c8.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794519287626_nbig",
+          "type": "image",
+          "url": "/uploads/1794519287604-group-6-c314f98a.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794519287626_94jq",
+          "type": "image",
+          "url": "/uploads/1794519287612-group-2-f6e5bb36.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794519287626_n1js",
+          "type": "image",
+          "url": "/uploads/1794519287610-group-5-db8129de.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794519893425_bp5g",
+          "type": "image",
+          "url": "/uploads/1794519893409-out-imav-1-f689fbdc.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794519893425_ol1h",
+          "type": "image",
+          "url": "/uploads/1794519893419-imav-icon-1-6af26598.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794519893425_ucpl",
+          "type": "image",
+          "url": "/uploads/1794519893419-imav-hoodie-1-16877fd5.png",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "showSocialLinks": true,
+      "socialLinks": [],
+      "seo": {
+        "metaTitle": "",
+        "metaDescription": ""
+      },
+      "updatedAt": "2026-11-12T21:45:11.891Z"
+    },
+    {
+      "id": "proj_forbes_30u30",
+      "title": "Carousel Designs",
+      "slug": "carousel-designs",
+      "year": "2026",
+      "shortDescription": "My goal has always been to give each brand a visual presence that reflects its identity, communicates its message, and creates meaningful connections with its audience",
+      "thumbnailUrl": "/uploads/1794521908283-feedme-design-2--e6e6f26f.png",
+      "hoverOverlayColor": "#feab2d",
+      "published": true,
+      "order": 2,
+      "blocks": [
+        {
+          "id": "b_1794519985955_n5v9",
+          "type": "image",
+          "url": "/uploads/1794519985953-social-media-flyers-2--de8b7891.gif",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794521430177_7t1w",
+          "type": "image",
+          "url": "/uploads/1794521430142-feedme-carousel-content-9--9e2cf586.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794521430177_m8ep",
+          "type": "image",
+          "url": "/uploads/1794521430137-feedme-carousel-content-10--6b5a4f81.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794521430177_a3vy",
+          "type": "image",
+          "url": "/uploads/1794521430110-feedme-carousel-content-11--aaa48aa2.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794521430177_hfqa",
+          "type": "image",
+          "url": "/uploads/1794521430156-feedme-carousel-content-7--665a6263.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794521430177_rlbk",
+          "type": "image",
+          "url": "/uploads/1794521430150-feedme-carousel-content-8--092fa8e1.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794521430177_wlwd",
+          "type": "image",
+          "url": "/uploads/1794521430113-feedme-carousel-content-4--43e1ef06.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794521430177_bosz",
+          "type": "image",
+          "url": "/uploads/1794521430129-feedme-carousel-content-5--7d7873d4.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794521430177_skrg",
+          "type": "image",
+          "url": "/uploads/1794521430163-feedme-carousel-content-6--cd2b48bd.png",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "seo": {
+        "metaTitle": "",
+        "metaDescription": ""
+      },
+      "showSocialLinks": true,
+      "socialLinks": [],
+      "updatedAt": "2026-11-12T22:18:32.364Z"
+    },
+    {
+      "id": "proj_weather_time",
+      "title": "MockUp Designs",
+      "slug": "mockups",
+      "year": "Current",
+      "shortDescription": "I help brands design marketing materials that attract customers and drive purchases through simple and engaging visuals.",
+      "thumbnailUrl": "/uploads/1794522152683-ikeja_led-billboard-979ecfa4.jpg",
+      "hoverOverlayColor": "#feab2d",
+      "published": true,
+      "order": 3,
+      "blocks": [
+        {
+          "id": "b_1794522044144_3pu1",
+          "type": "wide_image",
+          "url": "/uploads/1794522048327-social-media-flyers-3--5433aba8.gif",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794522165711_mmmz",
+          "type": "image",
+          "url": "/uploads/1794522165709-ikeja_led-billboard-7f26ed4b.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794522172336_g6sq",
+          "type": "image",
+          "url": "/uploads/1794522172334-unilag_lamp-post-3c18d173.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794522180538_4pzh",
+          "type": "image",
+          "url": "/uploads/1794522180527-0zumba-mbadiwe-2_banner-e2630554.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794522086710_iwb1",
+          "type": "image",
+          "url": "/uploads/1794522086676-out-imav-1-8d6fe997.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794522293848_1z9t",
+          "type": "image",
+          "url": "/uploads/1794522293844-eko-atlantic-banner-7c40f590.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794522086710_chuu",
+          "type": "image",
+          "url": "/uploads/1794522086682-imav-hoodie-1-5396ff90.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794522086710_e782",
+          "type": "image",
+          "url": "/uploads/1794522086687-group-6-76aad97b.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794522086710_m3aw",
+          "type": "image",
+          "url": "/uploads/1794522086695-group-4-e48d600f.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794522086710_ihjq",
+          "type": "image",
+          "url": "/uploads/1794522086699-group-3-d5028c66.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794522086710_ago9",
+          "type": "image",
+          "url": "/uploads/1794522086703-group-2-8af1cb00.png",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "showSocialLinks": true,
+      "socialLinks": [],
+      "seo": {
+        "metaTitle": "",
+        "metaDescription": ""
+      },
+      "updatedAt": "2026-11-12T22:34:01.170Z"
+    },
+    {
+      "id": "proj_generations",
+      "title": "AI Motions & Contents",
+      "slug": "generations",
+      "year": "2025 - Current",
+      "shortDescription": "I leverage AI to create engaging motion designs for brands, bringing product launches, campaigns, and creative ideas to life through visually compelling content.",
+      "thumbnailUrl": "/uploads/1794522875575-97376db2dc67c23ba6eec5e671992d69-99702221.jpg",
+      "hoverOverlayColor": "#feab2d",
+      "published": true,
+      "order": 4,
+      "blocks": [
+        {
+          "id": "b_1794522951623_qw3p",
+          "type": "wide_image",
+          "url": "",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794522955357_yt7s",
+          "type": "image",
+          "url": "/uploads/1794522955352-social-media-flyers-4--78f41a58.gif",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794523045355_55si",
+          "type": "image",
+          "url": "/uploads/1794523045337-f70d9da7ac703a9ebb07e936837880ec-4f6cfba2.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794523045355_wy2l",
+          "type": "image",
+          "url": "/uploads/1794523045338-ff41b387358a58548db2d2bd47c06c0a-ca9b687a.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794523045355_a5vo",
+          "type": "image",
+          "url": "/uploads/1794523045339-97376db2dc67c23ba6eec5e671992d69-2fedc940.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794523045355_79di",
+          "type": "image",
+          "url": "/uploads/1794523045340-434d33480f0e4c68166dcecd078eea82-c9be539d.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794523045355_mehg",
+          "type": "image",
+          "url": "/uploads/1794523045340-11041aa544c28a758688ac0a3ea62428-8fe136e7.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794523045355_68aj",
+          "type": "image",
+          "url": "/uploads/1794523045340-6e6c0aedf1ec901f7ead8345fe54647d-1c7b3758.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794523045355_hezi",
+          "type": "image",
+          "url": "/uploads/1794523045341-media-generation-aso-oke-couple-suits-0--e2a1f357.webp",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794523525444_3hl2",
+          "type": "image",
+          "url": "/uploads/1794523525439-0272cf3bd43e1de9ba2231620817f53d-31e643fb.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794523525444_79u4",
+          "type": "image",
+          "url": "/uploads/1794523525440-90e640bccc7e10326dba9574a616a2ac-d4963679.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794523525444_5wm2",
+          "type": "image",
+          "url": "/uploads/1794523525440-82a6e54cdce63923345bf6f3b3183702-5ba2f0e1.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794523525444_5gjk",
+          "type": "image",
+          "url": "/uploads/1794523525441-4db8314e290a96515e9f9cd0930a2767-f1de2f8a.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794523525444_v3t9",
+          "type": "image",
+          "url": "/uploads/1794523525441-835903960bad74f0aa886328b523e406-e0fbfa88.jpg",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "showSocialLinks": true,
+      "socialLinks": [],
+      "seo": {
+        "metaTitle": "",
+        "metaDescription": ""
+      },
+      "updatedAt": "2026-11-12T22:52:51.979Z"
+    },
+    {
+      "id": "proj_telemetry_app",
+      "title": "My Inspirations",
+      "slug": "inspirations",
+      "year": "2026",
+      "shortDescription": "I learn from different designs I see, so I can keep growing as a designer.",
+      "thumbnailUrl": "/uploads/1794523999880-img_6587-jpg-1bf97f6d.jpg",
+      "hoverOverlayColor": "#feab2d",
+      "published": true,
+      "order": 5,
+      "blocks": [
+        {
+          "id": "b_1794524020040_4dll",
+          "type": "wide_image",
+          "url": "/uploads/1794524060030-social-media-flyers-5--cd5c8bd5.gif",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524074699_vot5",
+          "type": "image",
+          "url": "/uploads/1794524074680-img_6585-jpg-84ee1d39.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524074699_o3qa",
+          "type": "image",
+          "url": "/uploads/1794524074681-img_6587-jpg-2253b0e8.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524074699_jyin",
+          "type": "image",
+          "url": "/uploads/1794524074683-img_6588-jpg-e463f12c.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524074699_1k3e",
+          "type": "image",
+          "url": "/uploads/1794524074687-img_6590-jpg-2ef95e70.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524074699_hc41",
+          "type": "image",
+          "url": "/uploads/1794524074688-img_6591-jpg-0206e89c.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524074699_4u9w",
+          "type": "image",
+          "url": "/uploads/1794524074689-img_6592-jpg-9fed1e91.jpg",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524074699_erpt",
+          "type": "image",
+          "url": "/uploads/1794524074690-img_6593-jpg-91e76594.jpg",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "showSocialLinks": true,
+      "socialLinks": [],
+      "seo": {
+        "metaTitle": "",
+        "metaDescription": ""
+      },
+      "updatedAt": "2026-11-12T22:55:38.492Z"
+    },
+    {
+      "id": "proj_kilimanjaro",
+      "title": "Betta Builder",
+      "slug": "betta-builder",
+      "year": "2024-2025",
+      "shortDescription": "At Beta Builder, I supported the brand with design, packaging, printing, and creating Contents.",
+      "thumbnailUrl": "/uploads/1794524669482-34-a457dcff.png",
+      "hoverOverlayColor": "#feab2d",
+      "published": true,
+      "order": 6,
+      "blocks": [
+        {
+          "id": "b_1794524678369_ba1f",
+          "type": "image",
+          "url": "/uploads/1794524678311-9-5d19f419.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524678369_w86f",
+          "type": "image",
+          "url": "/uploads/1794524678314-18-1ff0c475.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524678369_43hm",
+          "type": "image",
+          "url": "/uploads/1794524678319-20-3ce0def6.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524678369_y0k7",
+          "type": "image",
+          "url": "/uploads/1794524678327-26-ab41a0d0.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524678369_215d",
+          "type": "image",
+          "url": "/uploads/1794524678331-30-491811c0.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524678369_1q3a",
+          "type": "image",
+          "url": "/uploads/1794524678335-31-d976b662.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524678369_ezlw",
+          "type": "image",
+          "url": "/uploads/1794524678342-34-65eaffd2.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524678369_rlup",
+          "type": "image",
+          "url": "/uploads/1794524678348-38-1c0de274.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524678369_rl34",
+          "type": "image",
+          "url": "/uploads/1794524678355-40-32c373f6.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524678369_yoip",
+          "type": "image",
+          "url": "/uploads/1794524678362-45-2d0fec16.png",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "showSocialLinks": true,
+      "socialLinks": [],
+      "seo": {
+        "metaTitle": "",
+        "metaDescription": ""
+      },
+      "updatedAt": "2026-11-12T23:05:03.327Z"
+    },
+    {
+      "id": "proj_mclaren_p1",
+      "title": "FeedMe",
+      "slug": "feedme",
+      "year": "2026",
+      "shortDescription": "At Feedme, I designed content and helped bring their social media back to life.",
+      "thumbnailUrl": "/uploads/1794524734177-2-95039ed9.png",
+      "hoverOverlayColor": "#feab2d",
+      "published": true,
+      "order": 7,
+      "blocks": [
+        {
+          "id": "b_1794524761359_rirv",
+          "type": "image",
+          "url": "/uploads/1794524761295-1-169fdd08.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524761359_wgfg",
+          "type": "image",
+          "url": "/uploads/1794524761298-2-25acc49a.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524761359_9sdy",
+          "type": "image",
+          "url": "/uploads/1794524761302-6-068d37bf.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524761359_6bd1",
+          "type": "image",
+          "url": "/uploads/1794524761304-8-d58d4105.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524761359_nmao",
+          "type": "image",
+          "url": "/uploads/1794524761310-10-575170bd.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524761359_z797",
+          "type": "image",
+          "url": "/uploads/1794524761313-14-85db960a.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524761359_tu7i",
+          "type": "image",
+          "url": "/uploads/1794524761323-28-3e39e21a.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524761359_62e9",
+          "type": "image",
+          "url": "/uploads/1794524761326-30-81607468.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524761359_6yqh",
+          "type": "image",
+          "url": "/uploads/1794524761328-35-ae049173.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524761359_8fmh",
+          "type": "image",
+          "url": "/uploads/1794524761335-40-8302aa8f.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524761359_pidn",
+          "type": "image",
+          "url": "/uploads/1794524761339-42-c34b304e.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524761359_u9yt",
+          "type": "image",
+          "url": "/uploads/1794524761343-48-b18dcef6.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524761359_xytq",
+          "type": "image",
+          "url": "/uploads/1794524761349-52-58df4f1c.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524761359_nz64",
+          "type": "image",
+          "url": "/uploads/1794524761352-58-31574f92.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524761359_o8lz",
+          "type": "image",
+          "url": "/uploads/1794524761354-60-68752f0d.png",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "showSocialLinks": true,
+      "socialLinks": [],
+      "seo": {
+        "metaTitle": "",
+        "metaDescription": ""
+      },
+      "updatedAt": "2026-11-12T23:06:28.288Z"
+    },
+    {
+      "id": "proj_volvo_fh",
+      "title": "Aluba Consulting",
+      "slug": "volvo-fh-experience",
+      "year": "2025 - Current",
+      "shortDescription": "At Alubara Consulting, I worked on creating visual materials for the brand, including product catalogues, travel guides, and other communication designs. I focused on presenting information in a clear, engaging, and visually appealing way while maintaining the brand's identity.",
+      "thumbnailUrl": "/uploads/1794524837138-twcr9dltznsh5gp8x67igno39yc-9eaddf81.webp",
+      "hoverOverlayColor": "#feab2d",
+      "published": true,
+      "order": 8,
+      "blocks": [
+        {
+          "id": "b_1794524852958_j0h2",
+          "type": "image",
+          "url": "/uploads/1794524852918-5-54945177.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524852958_u40q",
+          "type": "image",
+          "url": "/uploads/1794524852919-6-5c18315b.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524852958_b0z5",
+          "type": "image",
+          "url": "/uploads/1794524852920-11-e4fea212.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524852958_9450",
+          "type": "image",
+          "url": "/uploads/1794524852924-17-c0f00df5.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524852958_9qvj",
+          "type": "image",
+          "url": "/uploads/1794524852925-18-0ed0e877.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524852958_5coo",
+          "type": "image",
+          "url": "/uploads/1794524852930-april-bcb76cb2.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524852958_w5zi",
+          "type": "image",
+          "url": "/uploads/1794524852936-canada-design-f889f49e.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524852958_cdm2",
+          "type": "image",
+          "url": "/uploads/1794524852939-eid-ai-adha-9e561391.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524852958_0u61",
+          "type": "image",
+          "url": "/uploads/1794524852940-gf-806ba3bc.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524852958_bsmi",
+          "type": "image",
+          "url": "/uploads/1794524852941-hcd-c4b9de59.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524852958_p1n1",
+          "type": "image",
+          "url": "/uploads/1794524852944-june-50bc8364.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524852958_cr8i",
+          "type": "image",
+          "url": "/uploads/1794524852948-march-design-41863979.png",
+          "alt": "",
+          "caption": ""
+        },
+        {
+          "id": "b_1794524852958_ojvl",
+          "type": "image",
+          "url": "/uploads/1794524852952-portugal-design-604e9627.png",
+          "alt": "",
+          "caption": ""
+        }
+      ],
+      "showSocialLinks": true,
+      "socialLinks": [
+        {
+          "id": "share_pinterest_0",
+          "name": "Pinterest",
+          "icon": "pinterest",
+          "url": "https://pinterest.com/pin/create/button/?url={url}&description={title}",
+          "visible": true
+        },
+        {
+          "id": "share_twitter_1",
+          "name": "Twitter / X",
+          "icon": "twitter",
+          "url": "https://twitter.com/intent/tweet?url={url}&text={title}",
+          "visible": true
+        },
+        {
+          "id": "share_facebook_2",
+          "name": "Facebook",
+          "icon": "facebook",
+          "url": "https://www.facebook.com/sharer/sharer.php?u={url}",
+          "visible": true
+        },
+        {
+          "id": "share_tumblr_3",
+          "name": "Tumblr",
+          "icon": "tumblr",
+          "url": "https://www.tumblr.com/widgets/share/tool?canonicalUrl={url}&title={title}",
+          "visible": true
+        }
+      ],
+      "seo": {
+        "metaTitle": "",
+        "metaDescription": ""
+      },
+      "updatedAt": "2026-11-12T23:07:40.349Z"
+    }
+  ],
+  "inbox": [],
+  "users": [
+    {
+      "id": "admin",
+      "username": "admin",
+      "passwordHash": "$2a$10$InzzpuU/na8cKZ1O1dmQ.e7oyVO34nSDvpTaxYIdEfghXureItoMq",
+      "mustChangePassword": false,
+      "updatedAt": "2026-11-12T09:49:44.071Z"
+    }
+  ]
+}

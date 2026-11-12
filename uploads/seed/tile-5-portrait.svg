@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+    <defs>
+      <linearGradient id="portraitBg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#9ea49d" />
+        <stop offset="50%" stop-color="#73827a" />
+        <stop offset="100%" stop-color="#4e5b54" />
+      </linearGradient>
+      <radialGradient id="sunGlow" cx="20%" cy="20%" r="70%">
+        <stop offset="0%" stop-color="#ffeed6" stop-opacity="0.8" />
+        <stop offset="50%" stop-color="#ffcb99" stop-opacity="0.3" />
+        <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+      </radialGradient>
+    </defs>
+    <rect width="1200" height="900" fill="url(#portraitBg)" />
+    <!-- Warm Sun Flare -->
+    <rect width="1200" height="900" fill="url(#sunGlow)" />
+    <!-- Grandfather Silhouette and Face (Right) -->
+    <g transform="translate(520, 200)">
+      <!-- Torso / Red Polo Shirt -->
+      <path d="M120,450 C120,380 200,340 280,340 C360,340 440,380 450,450 Z" fill="#9b1e22" />
+      <!-- Head / Profile -->
+      <path d="M180,240 C170,140 250,90 320,110 C390,130 400,240 370,310 C330,350 250,340 200,310 Z" fill="#dcb193" />
+      <!-- Silver Hair -->
+      <path d="M220,130 C250,90 340,90 370,120 C390,150 370,170 360,170 C340,130 280,120 230,140 Z" fill="#ededed" opacity="0.9" />
+      <!-- Eyeglasses -->
+      <ellipse cx="230" cy="210" rx="22" ry="18" fill="none" stroke="#222" stroke-width="5" />
+      <line x1="252" y1="205" x2="280" y2="195" stroke="#222" stroke-width="4" />
+      <!-- Smiling Expression lines -->
+      <path d="M205,260 Q235,285 260,265" fill="none" stroke="#8c583f" stroke-width="4" stroke-linecap="round" />
+    </g>
+    <!-- Toddler Silhouette (Left) Touching Grandfather's Face -->
+    <g transform="translate(180, 260)">
+      <!-- Blue Longsleeve Shirt -->
+      <path d="M100,450 C90,370 160,340 230,350 C300,360 330,420 340,450 Z" fill="#7597b8" />
+      <!-- Head / Blond Hair -->
+      <path d="M160,240 C140,160 210,120 270,140 C320,160 330,230 300,290 C260,330 190,310 160,250 Z" fill="#e8c2a5" />
+      <!-- Golden Curls -->
+      <path d="M150,220 C130,130 220,90 280,105 C330,120 340,180 320,190 C300,120 210,120 160,200 Z" fill="#f7d98c" />
+      <!-- Smiling Eyes -->
+      <path d="M280,215 Q295,225 310,215" fill="none" stroke="#75472e" stroke-width="4" stroke-linecap="round" />
+      <!-- Little Hand touching cheek -->
+      <path d="M320,290 C370,250 420,220 460,200 C475,200 480,220 450,240 C410,270 370,320 330,340 Z" fill="#e8c2a5" />
+    </g>
+    <!-- Cinematic Film Grain / Soft Tone -->
+    <rect width="1200" height="900" fill="#ffecdb" opacity="0.08" />
+  </svg>

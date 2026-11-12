@@ -1,0 +1,17 @@
+# node_modules/
+# .env
+# .DS_Store
+# portfolio-site.zip
+# *.log
+
+# # Ignore runtime database (keep seed database)
+# data/db.json
+# data/db.checkpoint.json
+
+# # Checkpoint archives
+# backups/
+
+# # User uploads: ignore all except .gitkeep and seed assets
+# uploads/*
+# !uploads/.gitkeep
+# !uploads/seed/
