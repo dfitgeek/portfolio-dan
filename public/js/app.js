@@ -185,7 +185,7 @@
 
     // Match route
     if (path === '/' || path === '/projects') {
-      document.title = (appState.settings?.siteName || 'Thomas Moeller') + ' — Projects';
+      document.title = (appState.settings?.siteName || 'OLUSANYA DANIEL') + ' — Projects';
       await window.HomeView.render(appContainer, appState);
     } else if (path.startsWith('/project/')) {
       const slug = path.replace('/project/', '').split('?')[0].split('#')[0];
