@@ -96,28 +96,13 @@
     "directMethods": [
       {
         "label": "Phone",
-        "value": "(347) 668-1576",
-        "link": "tel:3476681576"
+        "value": "+234 810 101 4695",
+        "link": "tel:810-101-4695"
       },
       {
-        "label": "Twitter",
-        "value": "twitter.com/thomas_moeller",
-        "link": "https://twitter.com/thomas_moeller"
-      },
-      {
-        "label": "Behance",
-        "value": "behance.net/ThomasMoeller",
-        "link": "https://behance.net/ThomasMoeller"
-      },
-      {
-        "label": "Dribbble",
-        "value": "dribbble.com/thomas_moeller",
-        "link": "https://dribbble.com/thomas_moeller"
-      },
-      {
-        "label": "Linkedin",
-        "value": "linkedin.com/in/thomasjmoeller/",
-        "link": "https://linkedin.com/in/thomasjmoeller/"
+        "label": "Gmail",
+        "value": "olusanyadaniel03@gmail.com",
+        "link": "olusanyadaniel03@gmail.com"
       }
     ],
     "formIntro": "Or use the form below to send me an email!",

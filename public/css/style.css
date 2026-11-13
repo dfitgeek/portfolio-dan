@@ -45,6 +45,50 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* Professional Headshot */
+.professional-headshot-wrapper {
+  width: 100%;
+  max-width: 340px;
+  margin: 35px auto 45px;
+  padding: 5px;
+  border-radius: 18px;
+  border: 2px solid rgba(150, 150, 150, 0.25);
+  overflow: hidden;
+  transition: all 0.4s ease;
+  background: transparent;
+}
+
+.professional-headshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+/* Hover effects */
+.professional-headshot-wrapper:hover {
+  border-color: var(--accent-color, #b58b50);
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.16);
+}
+
+.professional-headshot-wrapper:hover .professional-headshot {
+  transform: scale(1.035);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .professional-headshot-wrapper {
+    max-width: 260px;
+    margin: 25px auto 35px;
+  }
+}
+
+
 a {
   color: inherit;
   text-decoration: none;

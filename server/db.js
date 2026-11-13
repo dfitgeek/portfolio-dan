@@ -19,36 +19,46 @@ function ensureDirs() {
 function getDefaultSchema() {
   return {
     settings: {
-      siteName: "THOMAS MOELLER",
+      siteName: "OLUSANYA DANIEL",
       navLabels: {
         projects: "PROJECTS",
         about: "ABOUT ME",
         contact: "CONTACT"
       },
       socialLinks: [
-        { id: "twitter", name: "Twitter/X", url: "https://twitter.com/thomas_moeller", icon: "twitter", visible: true },
-        { id: "behance", name: "Behance", url: "https://behance.net/ThomasMoeller", icon: "behance", visible: true },
-        { id: "linkedin", name: "LinkedIn", url: "https://linkedin.com/in/thomasjmoeller/", icon: "linkedin", visible: true },
-        { id: "dribbble", name: "Dribbble", url: "https://dribbble.com/thomas_moeller", icon: "dribbble", visible: true }
+        { id: "twitter", name: "Twitter/X", url: "https://twitter.com", icon: "twitter", visible: false },
+        { id: "behance", name: "Behance", url: "https://behance.net/", icon: "behance", visible: false },
+        { id: "linkedin", name: "LinkedIn", url: "https://linkedin.com/in/", icon: "linkedin", visible: false },
+        { id: "dribbble", name: "Dribbble", url: "https://dribbble.com/", icon: "dribbble", visible: false }
       ],
       accentColor: "#7ec8b8",
       fontHeading: "Bitter",
       fontBody: "Source Sans 3",
-      footerText: "Powered by Adobe Portfolio",
+      footerText: "Powered by Olusanya Daniel. All rights reserved.",
       faviconUrl: "",
       seo: {
-        metaTitle: "Thomas Moeller — Design Portfolio",
-        metaDescription: "Senior Product Designer & Creative Director. Crafting digital experiences, systems, and visual design."
+        metaTitle: "Olusanya Daniel — Design Portfolio",
+        metaDescription: "Creative Designer",
       }
     },
     about: {
       heading: "About me",
       paragraphs: [
-        "I'm a believer in the fight. Keeping it simple. Being obsessive over craft, making it personal and giving a shit. I'm curious, empathetic, rigorous, and experimental. I appreciate a holistic way of solving design problems in collaborative teams. I like accelerated methodologies. Thinking quick, rapid prototyping, and learning through testing but not discounting a designer's intuition.",
+        `I'm Daniel, a multidisciplinary creative with a passion for turning ideas into meaningful digital experiences and solutions.
+
+My work sits at the intersection of design, technology and business. I enjoy exploring ideas, understanding problems and creating solutions that are not only visually engaging but also practical and impactful.
+
+Over the years, I've worked with brands and businesses across different industries, contributing to brand identity, graphic design, social media management, print and packaging design, and digital product experiences.
+
+Beyond design, my background in Economics has shaped how I approach problems, think strategically and understand the bigger picture behind businesses.
+
+I'm always curious, eager to learn and excited about opportunities to collaborate, experiment and create work that makes a difference.`,
         "I seek to learn what works and do more of it. Learn what doesn't and change it.",
         "As a design leader, I seek to own creative excellence at every touch-point. I'm a passionate student of real-world design, users, consumers, trends, competitors and culture. Through listening, learning and mining insights, I fight for work that directs my client's brand into amazing places."
       ],
-      pullquote: "I'm a firm believer that simple is hard. And that design is truly about problem solving and making people's lives better.",
+      pullquote: `I'm Daniel, a multidisciplinary creative with a passion for turning ideas into meaningful digital experiences and solutions.
+
+My work sits at the intersection of design, technology and business. I enjoy exploring ideas, understanding problems and creating solutions that are not only visually engaging but also practical and impactful.`,
       photoUrl: "",
       showPhoto: false
     },
@@ -56,14 +66,14 @@ function getDefaultSchema() {
       heading: "Contact",
       intro: "Feel free to contact me in the following ways:",
       directMethods: [
-        { label: "Phone", value: "(347) 668-1576", link: "tel:3476681576" },
+        { label: "Phone", value: "+234 810 101 4695", link: "tel:+2348101014695" },
         { label: "Twitter", value: "twitter.com/thomas_moeller", link: "https://twitter.com/thomas_moeller" },
         { label: "Behance", value: "behance.net/ThomasMoeller", link: "https://behance.net/ThomasMoeller" },
         { label: "Dribbble", value: "dribbble.com/thomas_moeller", link: "https://dribbble.com/thomas_moeller" },
         { label: "Linkedin", value: "linkedin.com/in/thomasjmoeller/", link: "https://linkedin.com/in/thomasjmoeller/" }
       ],
       formIntro: "Or use the form below to send me an email!",
-      contactEmail: "thomas.moeller@example.com",
+      contactEmail: "olusanyadaniel03@gmail.com",
       successMessage: "Thank you for getting in touch! I'll get back to you shortly.",
       showPhone: true,
       showSocials: true
