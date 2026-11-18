@@ -105,7 +105,15 @@ window.AboutView = {
             </h1>
 
            <div class="about-paragraphs">
- 
+  <p>I'm Daniel, a multidisciplinary creative with a passion for turning ideas into meaningful digital experiences and solutions.</p>
+
+  <p>My work sits at the intersection of design, technology and business. I enjoy exploring ideas, understanding problems and creating solutions that are not only visually engaging but also practical and impactful.</p>
+
+  <p>Over the years, I've worked with brands and businesses across different industries, contributing to brand identity, graphic design, social media management, print and packaging design, and digital product experiences.</p>
+
+  <p>Beyond design, my background in Economics and has shaped how I approach problems, think strategically and understand the bigger picture behind businesses.</p>
+
+  <p>I'm always curious, eager to learn and excited about opportunities to collaborate, experiment and create work that makes a difference.</p>
 </div>
 
             <!-- Professional Headshot -->
